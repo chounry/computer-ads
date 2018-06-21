@@ -18,5 +18,9 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('motherboard/',include('motherboard.urls'))
+    path('',include('mainboard.urls')),
+    path('cpu/',include('cpu.urls')),
+    path('graphic/',include('graphic.urls')),
+    path('ram/',include('ram.urls')),
+    path('form/',include('proForm.urls'))
 ]

@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
+#python 3.6.4
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -31,7 +31,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'motherboard',
+    'mainboard',
+    'ram',
+    'graphic',
+    'cpu',
+    'market',
+    'proForm',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -67,6 +72,10 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'statics')
 ]
 
 WSGI_APPLICATION = 'comSpec.wsgi.application'
@@ -119,7 +128,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/statics/'
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

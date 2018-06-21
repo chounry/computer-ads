@@ -1,0 +1,18 @@
+-change Mainboard company table name to brand name
+
+
++Graphic {
+    -change [ num_of_core ] change type to CharField
+        
+    -add [ Processor_Manufacture, voltage ]
+
+    -delete [ mem_bandwidth ]
+}
+
++ Memrory Ram{
+    -add []
+}
+
++ CPU {
+    -add [voltage]
+}
